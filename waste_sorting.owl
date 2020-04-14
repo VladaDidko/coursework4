@@ -1,0 +1,1733 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sorti="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#belongsTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#hasHazardClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#hasHazardClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#hasHazardousProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#hasHazardousProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#hasHazardousProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#accepts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#accepts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#consistsOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#hasCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#hasCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeHow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeHow">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeWhen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeWhen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilizeTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HazardClass_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HazardClass_desc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hproperty_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hproperty_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ISO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ISO">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#city">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#code_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#code_desc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#name_sorting_point -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#name_sorting_point">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#product_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#product_desc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#street -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#street">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Address"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilization_percent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilization_percent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilization_rule_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#utilization_rule_desc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#working_hours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#working_hours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Production_waste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Production_waste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H220 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H220">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extremely flammable gas</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H221 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H221">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flammable gas</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H222 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H222">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extremely flammable aerosol</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H223 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H223">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flammable aerosol</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H224 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H224">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extremely flammable liquid and vapour</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatal if swallowed</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H301">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxic if swallowed</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H302">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmful if swallowed</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H304 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H304">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May be fatal if swallowed and enters airways</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H310 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H310">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatal in contact with skin</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H314 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H314">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes severe skin burns and eye damage</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H315 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H315">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes skin irritation</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H318 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H318">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes serious eye damage</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H319 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H319">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes serious eye irritation</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H335 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H335">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause respiratory irritation</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H340 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H340">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP11"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause genetic defects</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H350 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H350">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP7"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause cancer</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H351 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H351">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP7"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suspected of causing cancer</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H360 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H360">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP10"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May damage fertility or the unborn child</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H370 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H370">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes damage to organs</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H371 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H371">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause damage to organs</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H372 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H372">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causes damage to organs through prolonged or repeated exposure</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H373 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H373">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">May cause damage to organs through prolonged or repeated exposure</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H420 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#H420">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazard_class"/>
+        <sorti:belongsTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP14"/>
+        <sorti:HazardClass_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harms public health and the environment by destroying ozone in the upper atmosphere</sorti:HazardClass_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name>Explosive</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxic for reproduction</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutagenic</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Release of an acute toxic gas</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitising</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecotoxic</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Waste capable of exhibiting a hazardous property listed above not directly displayed by the original waste</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxidising</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flammable</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irritant — skin irritation and eye damage</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specific Target Organ Toxicity (STOT)/Aspiration Toxicity</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acute Toxicity</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carcinogenic</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corrosive</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#HP9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Hazardous_property"/>
+        <sorti:Hproperty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious</sorti:Hproperty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Organics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Organics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ALU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ALU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#41 ALU</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Алюміній</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Alkaline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Alkaline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#9 / #19</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Лужна батарейка</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#BAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#BAN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOOD"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WEEKLY"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шкірка від банана</product_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP20"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Коробка від піци</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP20"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD"/>
+        <utilizeTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycling"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Коробка від покупок та посилок</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">57</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Burning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Burning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ByColor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ByColor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сортувати за кольором</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PC"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoBurn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Тільки чисті і сухі</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Can -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Can">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ALU"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#DRYUP"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Press"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RemoveSticker"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WASH"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeMonth"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Алюмінієва бляшанка від газованих напоїв, пива, оливок</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">73</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Check -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Check">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TP"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoBurn"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoCompost"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RARELY"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Розрахунковий чек від покупок у магазині</product_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Composting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Composting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#DRYUP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#DRYUP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#40 FE</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сталь</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Без жиру</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скласти</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOOD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOOD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Organics"/>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food</code_desc>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Залишки їжі</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOR50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOR50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NW"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#50 FOR, NW</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Деревина</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOR51 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOR51">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#51 FOR</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Корок</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Foil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Foil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ALU"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#DRYUP"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WASH"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeWeek"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Алюмінієва фольга для випікання та зберігання їжі</product_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS70">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#70 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Склотара з різних типів скла, змішане скло</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS71 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS71">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#71 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Прозоре скло</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS72 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS72">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#72 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Зелене скло (пляшкове)</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS73 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS73">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#73 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляшкове скло (темно-коричневе) — Dark Sort Glass</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS74 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS74">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#74 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляшкове скло (світло-коричневе) — Light Sort Glass</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS75 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS75">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#75 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скло з малим вмістом свинцю</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS76 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS76">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#76 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Свинцеве скло</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS77 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS77">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#77 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скло, покрите міддю</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS78 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS78">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#78 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скло, покрите сріблом</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS79 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS79">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#79 GLS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Позолочене скло</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GreenBird -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GreenBird">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Київ</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">norenko@zeleniyptah.com.ua</email>
+        <name_sorting_point rdf:datatype="http://www.w3.org/2001/XMLSchema#string">“Зелений птах”</name_sorting_point>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(050) 385 77 17</phone>
+        <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сім&apos;ї Хохлових, 8</street>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GreenBox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GreenBox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Львів</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">greenbox.ukraine@gmail.com</email>
+        <name_sorting_point rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Зелена коробка – Greenbox</name_sorting_point>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(093) 117 6606</phone>
+        <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Заводська, 31</street>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#HDPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#HDPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PE-HD"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#2 PEHD або HDPE</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліетилен високої щільності</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ISort -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ISort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Високий</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yasortuyu@gmail.com</email>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пн-Пт: 10:00-19:00</email>
+        <name_sorting_point rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ЯСортую</name_sorting_point>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(099) 171-49-16
+(097) 667-30-39</phone>
+        <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Профспілкова 12А</street>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Jar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Jar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#GLS71"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#ByColor"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoChildren"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycling"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RARELY"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скляна банка від закруток</product_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#LDPE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#LDPE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PELD"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#4 PELD (LDPE)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліетилен низької щільності</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#LEAD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#LEAD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#8 Lead</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Свинцево-кислотна батарейка</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Organics"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#50 FOR, NW</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Деревина</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Newspaper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Newspaper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP22"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Друкована преса</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89.9</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Ni-Cd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Ni-Cd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#10 NiCD</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Нікель-кадмієва батарейка</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Ni-MH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Ni-MH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/sorti#Metal"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#11 NiMH</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Нікель-метал-гідридна батарейка</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoBurn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoBurn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Не спалювати</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoChildren -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoChildren">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Оберігати від дітей</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoCompost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoCompost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Не компостувати</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Без залишків їжі</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoWaste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoWaste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Glass"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Київ</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@nowaste.com.ua</email>
+        <name_sorting_point rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Україна БЕЗ Сміття</name_sorting_point>
+        <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Саперно-Слобідська, 25</street>
+        <working_hours rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Вт-Пт: 14:00-18:00
+Сб, Нд: 08:00-16:00</working_hours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoWaste2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoWaste2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_Points"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <accepts rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Київ</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">info@nowaste.com.ua</email>
+        <name_sorting_point rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Україна БЕЗ сміття</name_sorting_point>
+        <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Калнишевського, 2</street>
+        <working_hours rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Вт, Чт, Сб: 08:00-16:00</working_hours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#O -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#O">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#7 O(ther)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Всі інші пластмаси</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PCB"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#20 PAP (PCB)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Картон</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO>#21 PAP</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Папір</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#22 PAP</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Вощений папір</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PBD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PBD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PPB"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#23 PBD (PPB)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліграфічний картон</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PC</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полікарбонат</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PCB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PCB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO>#20 PAP (PCB)</ISO>
+        <code_desc>Картон</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PCW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PCW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PVC"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#3 PVC, PCW</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полівінілхлорид (ПВХ)</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PE-HD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PE-HD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PELD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PELD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#4 PELD (LDPE)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліетилен низької щільності</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#1 PET(E)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліетилентерефталат</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#5 PP</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліпропілен</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PPB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PPB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#23 PBD (PPB)</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Поліграфічний картон</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#6 PS</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полістирен (Полістирол)</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PVC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PVC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#3 PVC, PCW</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Полівінілхлорид (ПВХ)</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PaPe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PaPe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string"># 81 PapPe</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">папір + пластик</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Package -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Package">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PE-HD"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Press"/>
+        <utilizeTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Trash_bin"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeMonth"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пластиковий пакетик від продуктів на вагу</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PapAl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PapAl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Other"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#84 PapAl</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">папір + алюміній</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper_package -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper_package">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP21"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FOLD"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoFat"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пакет з крафт-паперу</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.8</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Plastic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Press -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Press">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Спресувати</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RARELY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RARELY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Razor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Razor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FE"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#DRYUP"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WASH"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RARELY"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сталева бритва для гоління</product_desc>
+        <utilization_percent rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">83</utilization_percent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RemoveSticker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#RemoveSticker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Зняти наліпку</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TEX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TEX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#60 COT</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Бавовна</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TEX61 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TEX61">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Dangerous"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#61 TEX</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Джутове волокно</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#TP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycle_code"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Paper"/>
+        <ISO rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#TP</ISO>
+        <code_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Термопапір</code_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Trash_bin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Trash_bin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WASH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WASH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_rule"/>
+        <utilization_rule_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Помити</utilization_rule_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WEEKLY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#WEEKLY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#magazine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#magazine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Waste_products"/>
+        <hasCode rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#PAP22"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#CLEAN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#FN"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoBurn"/>
+        <utilizeHow rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#NoCompost"/>
+        <utilizeTo rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Recycling"/>
+        <utilizeWhen rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times"/>
+        <product_desc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Глянцевий журнал</product_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeMonth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeMonth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeWeek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#1TimeWeek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#2-3Times">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Utilization_frequency"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/vlada/ontologies/2020/2/untitled-ontology-4#Box2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
